@@ -29,6 +29,13 @@ h1 {
     letter-spacing: 2px;
 }
 
+h2 {
+    color: #d4af37;
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -43,11 +50,13 @@ h1 {
     border: none;
     color: white;
     font-size: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
 }
 
 .dropdown-menu {
     position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -57,6 +66,7 @@ h1 {
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    left: 1rem;
 }
 
 .dropdown-content li {
@@ -82,35 +92,6 @@ h1 {
 .container {
     display: flex;
     flex-wrap: wrap;
-}
-
-.sidebar {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 1rem;
-}
-
-.sidebar h2 {
-    margin-top: 0;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 0.5rem 0;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.content {
-    flex: 1;
-    padding: 1rem;
 }
 
 .responsive-image {
@@ -147,51 +128,10 @@ h1 {
     }
 }
 
-.sidebar {
-    background: #333;
-    padding: 20px;
-    width: 250px;
-    min-height: calc(100vh - 100px); /* Adjust based on the header height */
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
-
-.sidebar h2 {
-    color: #d4af37;
-    font-family: 'Cinzel', serif;
-    letter-spacing: 1px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
-    color: #f5f5f5;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-.sidebar ul li a:hover {
-    color: #d4af37;
-}
-
 .content {
     flex: 1;
     padding: 20px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
-
-h2 {
-    color: #d4af37;
-    margin-top: 20px;
-    font-family: 'Cinzel', serif;
-    letter-spacing: 1px;
 }
 
 section {

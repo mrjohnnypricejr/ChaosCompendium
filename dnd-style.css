@@ -22,11 +22,14 @@ header {
     z-index: 1000;
 }
 
-h1 {
+header h1 {
+    font-size: 2rem; /* Default font size */
     margin: 0;
-    font-size: 2rem;
-    font-family: 'Cinzel', serif;
-    letter-spacing: 2px;
+    flex-grow: 1;
+    max-width: calc(100% - 3rem); /* Ensure it doesn't overlap the menu button */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis to overflow text */
 }
 
 h2 {

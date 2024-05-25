@@ -31,8 +31,8 @@
     </div>
 
     <script>
-        function toggleMenu() {
-            document.querySelector('.sidebar').classList.toggle('active');
+        function toggleDropdown() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
         }
 
         function showContent(character) {
@@ -209,6 +209,8 @@
 
             document.getElementById('main-content').innerHTML = content[character];
             document.getElementById('page-title').innerText = titles[character];
+
+            document.querySelector('.dropdown-content').classList.remove('show');
     }
     </script>
 </body>

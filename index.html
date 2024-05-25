@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Compendium</title>
+    <link rel="stylesheet" href="dnd-style.css">
+</head>
+<body>
+    <header>
+        <h1 id="page-title">Chaos Compendium</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#" onclick="showContent('recap1')">May 23rd, 2024 Recap</a></li>
+                <li><a href="#" onclick="showContent('derek')">Derek the Giant Spider</a></li>
+                <li><a href="#" onclick="showContent('rudmun')">Rudmun Gravehammer</a></li>
+                <li><a href="#" onclick="showContent('leonardo')">Leonardo Payne</a></li>
+                <li><a href="#" onclick="showContent('thaddeus')">Thaddeus Blackwood</a></li>
+                <li><a href="#" onclick="showContent('fountain_note')">Note within the Fountain</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="main-content">
+                <div>
+                    <img src="CrazyDND1.jpg" alt="Crazy DND" class="responsive-image">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+
+        function showContent(character) {
+            const content = {
+                recap1: `
+                    <section>
+                    <h2>The Awakening</h2>
+                    <p>The heroes—Mymitore Alean, Poppy Tart, Dyandra, Steve Harrington, and Tobey Gristle—awaken from a 15-year stone slumber in a dark, crumbling ancient citadel. The last memory they have is of defeating Willard 			and discovering Dump Silva was still alive. As they shake off the disorientation from their long sleep, they find themselves in a large throne room, dusty and abandoned, with tattered banners of One Direction 			hanging limply from the walls. The room is filled with overturned furniture and scattered papers, indicating years of neglect and a sudden abandonment. This eerie, silent atmosphere sets the tone for their 				adventure as they realize just how much time has passed.</p>
+                    </section>
+                    <section>
+                    <h2>The Hall of Shadows</h2>
+                    <p>Leaving the throne room, the heroes venture into the Hall of Shadows, a dark and ominous hallway lined with towering statues of cloaked figures. The floor is littered with the dead bodies of past adventurers, suggesting a fierce battle took place here. The statues, which are actually traps, add to the hall's danger. Using the dead bodies as fodder, the heroes cleverly trigger and navigate through the traps, making their way to the other side. Here, they encounter a peculiar mirror that reflects them as stone statues and the stone statues as <a href="#" onclick="showContent('thaddeus')">living people</a>. Intrigued and wary, Tobey Gristle smashes the mirror, which causes the statues to turn into living people, adding unexpected allies to their number.</p>
+                    </section>
+                    <section>
+                    <h2>The Armory</h2>
+                    <p>Next, the group enters the armory, discovering ancient weapons and armor. The armory is stocked with military-grade weapons and armor, all well-crafted but ordinary. The newly awakened allies arm themselves with these practical tools, preparing for the challenges ahead. The armory's functional nature provides a brief respite from the otherwise oppressive atmosphere of the citadel.</p>
+                    </section>
+                    <section>
+                    <h2>The Dungeons</h2>
+                    <p>Their exploration continues as they descend a staircase leading to the dungeons. The dark, damp cells are filled with remnants of past prisoners, creating an eerie ambiance with the sound of dripping water and the faint echoes of past agonies. The dungeons are a stark reminder of the citadel's grim history and the suffering that took place within its walls.</p>
+                    </section>
+                    <section>
+                    <h2>The Courtyard</h2>
+                    <p>Exiting to the courtyard, the heroes find themselves surrounded by high walls covered in ivy, with the open sky visible above. The courtyard, overgrown with weeds, holds some healing herbs among the vegetation, which the heroes eagerly collect. They discover a hidden compartment in the fountain that reveals a <a href="#" onclick="showContent('fountain_note')">scroll</a> detailing the history of the keep, providing them with valuable insight into their surroundings.</p>
+                    </section>
+                    <section>
+                    <h2>The Climb</h2>
+                    <p>Seeking a better understanding of their location, the heroes scale the courtyard walls, realizing they are surrounded by mountains and dense forest. The breathtaking yet isolating view emphasizes their seclusion and the challenge ahead. Climbing back down, they decide to dig under the fountain, uncovering a bronze hatch door. After melting the hatch door, they reveal a ladder leading down into darkness.</p>
+                    </section>
+                    <section>
+                    <h2>The Underground Railroad</h2>
+                    <p>Descending the ladder, they discover an underground railroad. The tunnels are filled with old, rusted tracks and abandoned carts, suggesting it was once a bustling hub of activity. This hidden network hints at possibilities of escape or further exploration, opening up new avenues for their journey.</p>
+                    </section>
+                `,
+                rudmun: `
+                    <section>
+                    <h2>Early Life and Joining the Guild</h2>
+                    <p>Rudmun Gravehammer, known to his friends and fellow adventurers as "Dags" due to his distinctive dagger earrings, was born into a respected dwarven family in the mountainous city of Grimforge. From a young age, Rudmun exhibited a talent for combat and a keen interest in ancient artifacts. His family, renowned for their craftsmanship and military service, supported his ambitions to become a skilled warrior and explorer.</p>
+                    <p>As a young dwarf, Rudmun joined a nameless guild led by the enigmatic mind wizard, Dump Silva. His courage, skill with daggers, and unwavering determination quickly earned him respect within the guild. He rose through the ranks, gaining a reputation as a fearless and resourceful adventurer.</p>
+                    </section>
+                    <section>
+                    <h2>Rise to Prominence</h2>
+                    <p>Rudmun's rise to prominence in the guild was marked by several notable missions. His expertise in navigating treacherous terrains and ancient ruins made him an invaluable asset. He often took on dangerous assignments, retrieving powerful artifacts and thwarting the plans of dark sorcerers. His loyalty to the guild and his unyielding commitment to its cause were well-known, making him a trusted member of Dump Silva's inner circle.</p>
+                    </section>
+                    <section>
+                    <h2>Time with the Heroes</h2>
+                    <p>When the heroes were initiated into the guild by Dump Silva, Rudmun was tasked with accompanying them on a mission to an ancient cliff-side wizard temple. The group, now bonded by their shared purpose, ventured into the temple to confront the threats within. There, they encountered Derek, a giant spider that had made the temple its home. In a fierce battle, Rudmun defeated the spider, demonstrating his prowess in combat.</p>
+                    <p>However, during the aftermath, one of the heroes, Steve Harrington, stole Rudmun's cherished dagger earrings. Steve cunningly convinced Rudmun that the spider's offspring were responsible for the theft. Enraged, Rudmun pursued the spiders deeper into the ruins, determined to retrieve his stolen belongings.</p>
+                    </section>
+                    <section>
+                    <h2>Life Among the Spiders</h2>
+                    <p>Rudmun's journey deeper into the ruins led to an unexpected turn of events. In the labyrinthine tunnels, he discovered that the spiders were not mindless beasts but intelligent creatures with a complex society. Over time, he developed a strange, almost symbiotic relationship with the spiders, becoming intimate with them and even fathering human-spider hybrid offspring.</p>
+                    <p>Rudmun's time among the spiders changed him. He began to see them as his new family, forging a unique bond with the creatures he once sought to destroy. This transformation was both physical and emotional, as he adapted to his new life in the darkness of the ruins.</p>
+                    </section>
+                    <section>
+                    <h2>Ultimate Demise</h2>
+                    <p>The heroes eventually crossed paths with Rudmun once more. Shocked by his transformation and the existence of his hybrid children, they viewed him as a threat to their mission and the balance they sought to maintain. Feeling betrayed and horrified by what he had become, they turned on him and the spiders.</p>
+                    <p>In the ensuing battle, the heroes killed the spiders and destroyed Rudmun's new family. Tobey Gristle, wielding his mighty hammer, delivered the final blow to Rudmun with a swift downward slam, ending his life. As Rudmun fell, he died with a mixture of sorrow and rage, his dreams of a new life shattered by those he once called friends.</p>
+                    </section>
+                    <section>
+                    <h2>Legacy and Reflection</h2>
+                    <p>Rudmun Gravehammer's story is a tragic tale of loyalty, transformation, and ultimate betrayal. His rise within the guild and his fall into the darkness of the ruins highlight the complex nature of his character. His life serves as a reminder of the thin line between heroism and monstrosity, and the unforeseen consequences of the choices made in pursuit of power and belonging.</p>
+                    <p>Though his life ended in tragedy, Rudmun's legacy within the guild remains a testament to his bravery and skill. His memory endures as a cautionary tale for future heroes, a reminder of the perils that lie in the depths of ancient ruins and the dark paths that can be unwittingly followed.</p>
+                    </section>
+                `,
+                derek: `
+                    <section>
+                    <h2>Early Life and Rise to Leadership</h2>
+                    <p>Derek was born deep within the labyrinthine caverns of the ancient cliff-side wizard temple, a sprawling complex of tunnels and chambers inhabited by a wide variety of arachnid creatures. From a young age, Derek exhibited qualities that set him apart from his peers: intelligence, empathy, and a keen sense of justice. Unlike other spiders who primarily focused on survival and territorial disputes, Derek was fascinated by the broader potential of their community.</p>
+                    <p>Recognizing his unique talents, the elder spiders took Derek under their tutelage, teaching him the ancient wisdom and history of their kind. As he grew, Derek's natural leadership abilities became evident. He not only excelled in the physical prowess typical of his species but also in diplomacy and strategic thinking. By the time he reached maturity, Derek was unanimously chosen as the leader of his colony.</p>
+                    </section>
+                    <section>
+                    <h2>Champion of Inclusivity and LGBTQ+ Rights</h2>
+                    <p>Derek's leadership was revolutionary. He envisioned a society where all spiders, regardless of size, color, or ability, could thrive together. He implemented policies of inclusivity, ensuring that every spider had a voice in the community. Derek was also a strong advocate for LGBTQ+ rights, understanding the importance of acceptance and love in building a harmonious society. Under his guidance, the colony became a sanctuary for spiders of diverse backgrounds and orientations, fostering an environment of mutual respect and understanding.</p>
+                    </section>
+                    <section>
+                    <h2>Advocate for Public Education</h2>
+                    <p>Believing that education was the cornerstone of a prosperous society, Derek established a comprehensive public education system within the colony. He organized classes on various subjects, from basic survival skills to advanced magical studies. Derek himself often taught these classes, sharing his vast knowledge and encouraging young spiders to think critically and compassionately. His efforts ensured that every spider had the opportunity to reach their full potential, leading to a more enlightened and progressive community.</p>
+                    </section>
+                    <section>
+                    <h2>Encounter with the Heroes</h2>
+                    <p>Despite his peaceful and progressive rule, Derek's colony faced external threats. The arrival of the heroes, accompanied by Rudmun Gravehammer (Dags), marked a turning point in Derek's life. The heroes, tasked with exploring the ancient wizard temple, perceived Derek and his colony as a danger. In a tragic misunderstanding, a battle ensued.</p>
+                    <p>Rudmun, renowned for his combat skills, ultimately defeated Derek in the fierce confrontation. Derek's death was a significant loss, not only to his colony but to the ideals he championed. His followers were left devastated, mourning the loss of their beloved leader and the progressive society he had built.</p>
+                    </section>
+                    <section>
+                    <h2>Aftermath and Legacy</h2>
+                    <p>Derek's legacy endured long after his death. Inspired by his teachings, the surviving members of his colony continued to uphold his values of inclusivity, equality, and education. They worked tirelessly to rebuild their society, honoring Derek's memory by striving to create the world he had envisioned.</p>
+                    <p>In the broader world, tales of Derek the giant spider spread far and wide. He became a symbol of progressive leadership and the power of education and acceptance. Even among humans and other creatures, Derek's story served as an inspiration, a reminder that true strength lies not in power or aggression but in compassion and understanding.</p>
+                    </section>
+                    <section>
+                    <h2>Conclusion</h2>
+                    <p>Derek's life was a testament to the potential for greatness within all beings, regardless of their origins. His commitment to inclusivity, LGBTQ+ rights, and public education set him apart as a leader and left an indelible mark on his community. Though his life was tragically cut short, Derek's legacy of love, equality, and enlightenment continues to inspire future generations, both within and beyond the world of spiders.</p>
+                    </section>
+                `,
+                leonardo: `
+                    <section>
+                    <h2>A Complex Ally</h2>
+                    <p>Leonardo Payne was a complex figure in the heroes' past, initially a high-ranking member of the malevolent guild One Direction. His powerful ability to move objects with a mere flick of his fingers made him a formidable opponent. However, after a near-fatal confrontation with the heroes, Leonardo's perspective shifted, and he was convinced to turn against One Direction and aid the heroes in their quest.</p>
+                    </section>
+                    <section>
+                    <h2>The Great Betrayal</h2>
+                    <p>It was Leonardo who, in a moment of desperation, used his telekinetic powers to hurl the airship into the sky, inadvertently setting the stage for the heroes' long absence. Despite his assistance, his actions left many in Styles' Hollow with mixed feelings about his true loyalties.</p>
+                    </section>
+                    <section>
+                    <h2>Life After the Airship's Departure</h2>
+                    <h3>Finding a New Purpose</h3>
+                    <p>With the airship and the heroes gone, Leonardo found himself at a crossroads. He chose to remain in Styles' Hollow, determined to make amends for his past and protect the town from the growing threat of Harold Stylins and One Direction. His powerful abilities made him an invaluable asset, though his presence continued to stir unease among some of the townsfolk.</p>
+                    </section>
+                    <section>
+                    <h2>The Shadow Protector</h2>
+                    <p>Leonardo took on the role of a shadow protector, using his powers discreetly to defend Styles' Hollow from various threats. He disrupted One Direction's operations in the area, sabotaged their plans, and ensured that the town remained as safe as possible. His efforts were largely covert, as he preferred to work from the shadows to avoid drawing attention to himself.</p>
+                    </section>
+                    <section>
+                    <h2>The Underground Resistance</h2>
+                    <p>Leonardo became a key member of the underground resistance that formed in response to Harold Stylins' tyranny. His knowledge of One Direction's inner workings and his telekinetic abilities made him a formidable ally. He provided the resistance with critical intelligence and executed precise strikes against Stylins' forces, all while maintaining a low profile.</p>
+                    </section>
+                    <section>
+                    <h2>Personal Struggles</h2>
+                    <h3>Haunted by the Past</h3>
+                    <p>Despite his efforts to aid the town, Leonardo was haunted by his past actions and the role he played in the heroes' departure. He struggled with feelings of guilt and a desire for redemption, often questioning whether he could ever truly make amends for his time with One Direction.</p>
+                    </section>
+                    <section>
+                    <h2>Solitary Vigilance</h2>
+                    <p>Leonardo lived a largely solitary life, keeping his distance from the townsfolk who still harbored suspicions about him. His days were spent honing his abilities, preparing for the inevitable confrontations with Stylins' forces, and maintaining a watchful eye over Styles' Hollow.</p>
+                    </section>
+                `,
+                thaddeus: `
+                    <section>
+                    <h2>Early Life and Training</h2>
+                    <p>Thaddeus Blackwood was a man of unwavering resolve and a natural-born leader, dedicated to protecting his homeland, Styles' Hallow. His journey began in a small, close-knit family known for their long lineage of soldiers and protectors. Growing up, Thaddeus was instilled with the values of honor, bravery, and a deep love for his community. His father, a respected captain in the town guard, often regaled him with tales of valor and sacrifice, which ignited Thaddeus's passion for military service.</p>
+                    <p>From a young age, Thaddeus demonstrated exceptional skill in combat and strategy. His prowess with a sword was matched only by his keen intellect and tactical acumen. Recognizing his potential, the town's elders sent him to train with the elite forces of the neighboring city-state, where he honed his skills and learned the art of warfare. Upon his return to Styles' Hallow, Thaddeus quickly rose through the ranks of the town guard, eventually becoming a key figure in the defense of the town.</p>
+                    </section>
+                    <section>
+                    <h2>Life in Styles' Hallow</h2>
+                    <p>During this time, Styles' Hallow was a vibrant community, known for its lively taverns and bustling marketplaces. One of the most popular establishments was the Drunken Goat, where Thaddeus often gathered with friends and fellow soldiers to share stories and plan their next moves against the increasing threats from One Direction, a dark and powerful guild led by the enigmatic Harold Stylins.</p>
+                    <p>When the airship nightclub "Electric Direction" docked in Styles' Hallow, it brought a new sense of excitement and energy to the town. The nightclub, run by a group of rebels who had taken over an enemy airship, became a symbol of resistance and defiance against the oppressive forces of One Direction. Thaddeus and his soldiers were frequent visitors, finding solace and camaraderie among the revelers. It was here that Thaddeus first met Leonardo Payne, a high-ranking member of One Direction who had defected to the resistance after a near-fatal encounter with the heroes. The two men formed a close alliance, combining their knowledge and resources to mount a formidable opposition to One Direction's tyranny.</p>
+                    </section>
+                    <section>
+                    <h2>Rise to General</h2>
+                    <p>As the resistance grew stronger, Thaddeus took on the role of general, leading a dedicated group of soldiers in a series of daring raids and strategic strikes against One Direction. His leadership and bravery inspired many, and his name became synonymous with hope and resistance in Styles' Hallow. The bond he shared with his soldiers was unbreakable, forged through countless battles and shared hardships.</p>
+                    </section>
+                    <section>
+                    <h2>The Ambush</h2>
+                    <p>However, the world turned dark one fateful night as Thaddeus and his men were en route to a critical battle against Stylin's army. They were ambushed by a powerful magical force, turning them into stone statues. Thaddeus's last memory before the darkness was a desperate attempt to protect his comrades and fulfill their mission.</p>
+                    </section>
+                    <section>
+                    <h2>Awakening</h2>
+                    <p>Awakening from his stone slumber, Thaddeus found himself and his soldiers freed by the heroes who had shattered the magic mirror in One Direction's lair. Confused but resolute, he quickly took stock of their situation and recognized the heroes from their time at "Electric Direction." With a mixture of relief and determination, Thaddeus explained their predicament and expressed the urgent need to return to their families in Styles' Hallow. He also mentioned their continued fight against One Direction, recalling their alliance with Leonardo Payne and the hope that still burned in their hearts.</p>
+                    </section>
+                    <section>
+                    <h2>A New Chapter</h2>
+                    <p>Thaddeus's life before becoming a statue was marked by dedication, bravery, and a relentless pursuit of justice. His awakening signaled a new chapter in the ongoing battle against darkness, with the heroes by his side once more.</p>
+                    </section>
+                `,
+                fountain_note: `
+                    <p>This fortress, known as Valthume Keep, was built in the early Age of Elders by the legendary sorcerer, Lord Valthume. He sought to establish a stronghold where he could conduct his arcane experiments and research in solitude, away from the prying eyes of rival wizards and kingdoms.</p>
+                    <p>Over the centuries, Valthume Keep served as a bastion of magical knowledge and power. Its walls were impenetrable, and its libraries housed tomes of spells and artifacts of immense power. Lord Valthume was known to possess secrets of elemental manipulation and life essence control, which he used to prolong his own life far beyond the natural span of a human.</p>
+                    <p>Despite his formidable power, Lord Valthume met a tragic end. In his pursuit of immortality, he delved too deeply into necromancy and dark rituals. His experiments with life and death twisted his mind and soul, and he ultimately succumbed to the very forces he sought to master.</p>
+                    <p>The keep fell into disrepair after Lord Valthume's demise. It became a place of fear and superstition among the local villagers, who avoided the area at all costs, believing it to be cursed by the restless spirits of those who perished in the sorcerer's experiments.</p>
+                    <p>Many treasures are said to lie hidden within the depths of Valthume Keep. Lord Valthume's personal vault, rumored to be protected by powerful wards and traps, contains artifacts of untold value and power.</p>
+                    <p>Furthermore, there are whispers of secret chambers and forgotten laboratories where Lord Valthume conducted his most forbidden experiments. These chambers are said to hold ancient tomes of forgotten magic and relics that could tip the balance of power in the world.</p>
+                    <p>It is said that one day, heroes would awaken the ancient power of Valthume Keep and restore balance to the realm. They would face trials and tribulations, but in the end, they would emerge victorious, wielding the artifacts of Lord Valthume against the forces of darkness.</p>
+                `
+        };
+
+        const titles = {
+                recap1: "May 23rd, 2024 Recap",
+                derek: "Derek the Giant Spider",
+                rudmun: "Rudmun Gravehammer",
+                leonardo: "Leonardo Payne",
+                thaddeus: "Thaddeus Blackwood",
+                fountain_note: "Secret Statue Scroll"
+            };
+
+            document.getElementById('main-content').innerHTML = content[character];
+            document.getElementById('page-title').innerText = titles[character];
+    }
+    </script>
+</body>
+</html>
+

@@ -41,7 +41,7 @@ h2 {
     width: 100%;
     max-width: 1200px; /* Limit the width of the container */
     margin-top: 100px; /* Adjust based on the header height */
-    padding: 0 20px; /* Add padding for better layout */
+    padding: 0 5px; /* Add padding for better layout */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
@@ -130,20 +130,20 @@ h2 {
 
 .content {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 section {
-    padding: 20px;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 5px 0;
     border-bottom: 1px solid #444;
     background: #2e2e2e;
     border-radius: 10px;
 }
 
 p {
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 1.1em;
     text-indent: 20px;
 }
@@ -159,7 +159,7 @@ a:hover {
 
 @media (min-width: 600px) {
     .container {
-        padding: 0 40px; /* Add padding for better layout */
+        padding: 0 20px; /* Add padding for better layout */
     }
 
     .content {
@@ -168,8 +168,8 @@ a:hover {
     }
 
     section {
-        margin: 20px auto;
-        padding: 30px;
+        margin: 10px auto;
+        padding: 15px;
         border-radius: 10px;
     }
 }
